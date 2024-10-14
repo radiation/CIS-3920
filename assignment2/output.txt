@@ -1,0 +1,64 @@
+       DailyTimeSpentonSite          Age    AreaIncome  DailyInternetUsage  \
+count           1000.000000  1000.000000   1000.000000         1000.000000   
+mean              65.000200    36.009000  55000.000080          180.000100   
+std               15.853615     8.785562  13414.634022           43.902339   
+min               32.600000    19.000000  13996.500000          104.780000   
+25%               51.360000    29.000000  47031.802500          138.830000   
+50%               68.215000    35.000000  57012.300000          183.130000   
+75%               78.547500    42.000000  65470.635000          218.792500   
+max               91.430000    61.000000  79484.800000          269.960000   
+
+              Male  ClickedonAd  
+count  1000.000000   1000.00000  
+mean      0.481000      0.50000  
+std       0.499889      0.50025  
+min       0.000000      0.00000  
+25%       0.000000      0.00000  
+50%       0.000000      0.50000  
+75%       1.000000      1.00000  
+max       1.000000      1.00000  
+Optimization terminated successfully.
+         Current function value: 0.692424
+         Iterations 3
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            ClickedonAd   No. Observations:                 1000
+Model:                          Logit   Df Residuals:                      998
+Method:                           MLE   Df Model:                            1
+Date:                Mon, 14 Oct 2024   Pseudo R-squ.:                0.001043
+Time:                        18:38:10   Log-Likelihood:                -692.42
+converged:                       True   LL-Null:                       -693.15
+Covariance Type:            nonrobust   LLR p-value:                    0.2291
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.0733      0.088      0.834      0.404      -0.099       0.245
+Male          -0.1523      0.127     -1.202      0.229      -0.401       0.096
+==============================================================================
+Optimization terminated successfully.
+         Current function value: 0.090892
+         Iterations 10
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:            ClickedonAd   No. Observations:                 1000
+Model:                          Logit   Df Residuals:                      993
+Method:                           MLE   Df Model:                            6
+Date:                Mon, 14 Oct 2024   Pseudo R-squ.:                  0.8689
+Time:                        18:38:10   Log-Likelihood:                -90.892
+converged:                       True   LL-Null:                       -693.15
+Covariance Type:            nonrobust   LLR p-value:                5.058e-257
+========================================================================================
+                           coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                   36.4130     58.175      0.626      0.531     -77.608     150.434
+DailyTimeSpentonSite    -0.1928      0.021     -9.284      0.000      -0.234      -0.152
+Age                      0.1711      0.026      6.605      0.000       0.120       0.222
+AreaIncome              -0.0001   1.88e-05     -7.245      0.000      -0.000   -9.93e-05
+DailyInternetUsage      -0.0635      0.007     -9.373      0.000      -0.077      -0.050
+Male                    -0.4237      0.405     -1.047      0.295      -1.217       0.369
+Timestamp            -6.206e-09   3.98e-08     -0.156      0.876   -8.43e-08    7.18e-08
+========================================================================================
+
+Possibly complete quasi-separation: A fraction 0.23 of observations can be
+perfectly predicted. This might indicate that there is complete
+quasi-separation. In this case some parameters will not be identified.
