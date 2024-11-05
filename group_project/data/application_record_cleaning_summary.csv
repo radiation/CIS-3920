@@ -1,0 +1,2 @@
+File,Original Rows,Cleaned Rows,Original Columns,Cleaned Columns,Dropped Columns
+data/application_record.csv,438557,304354,18,18,set()
